@@ -1,0 +1,68 @@
+<!--Write a program to develope array functionality-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 3</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var a=[1,3,2,5,6,7,32];
+    var ch= prompt("Array = 1,3,2,5,6,7,32 \n Chose Operation : \n 1. Sort \n 2. Shift \n 3. Unshift \n 4. Push \n 5. Pop \n 6. Join \n 7. Concat \n 8. Slice \n 9. Length");
+    var c=parseInt(ch);
+
+    switch(c)
+    {
+        case 1:
+             a.sort();
+             document.writeln("Sorted Array : "+a);
+        break;
+
+        case 2:
+            a.shift();
+            document.writeln("Shifted Array : "+a);
+        break;
+
+        case 3:
+            a.unshift(9);
+            document.writeln("Unshifted Array : "+a);
+        break;
+
+        case 4:
+            a.push(3);
+            document.writeln("Array After Push : "+a);
+        break;
+
+        case 5:
+            a.pop();
+            document.writeln("Array After Pop : "+a);
+        break
+
+        case 6:
+            var x = a.join('x');
+            document.writeln("Array after Join : "+x);
+        break;
+
+        case 7:
+            a=a.concat(4,55,77);
+            document.writeln("Array after concat : "+a);
+        break;
+
+        case 8:
+            y=a/slice(1,2);
+            document.writeln("Array after slice : "+y);
+        break;
+
+        case 9:
+            document.writeln("Length of array is : "+a.length);
+        break;
+
+        default :
+            document.writeln("Invalid choise...!");
+    }
+</script>

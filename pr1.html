@@ -1,0 +1,34 @@
+<!--Write simple Javascript with HTML for arithmetic expression evaluation and message printing-->>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 1</title>
+
+    <input type="text" name="" id="result1" readonly>
+    <br>
+    <input type="text" name="" id="result2" readonly>
+    <br>
+    <input type="text" name="" id="result3" readonly>
+    <br>
+    <input type="text" name="" id="result4" readonly>
+
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var a=parseInt(prompt("Enter first Number"));
+    var b=parseInt(prompt("Enter second Number"));
+    var add=a+b;
+    var sub=a-b;
+    var mlt=a*b;
+    var div=a/b;
+    document.getElementById('result1').value="Addition = "+add;
+    document.getElementById('result2').value="Subtraction = "+sub;
+    document.getElementById('result3').value="Multiplication = "+mlt;
+    document.getElementById('result4').value="Division = "+div;
+</script>
